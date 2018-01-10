@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0926BC1A8A8B1E7BA382ABF8 /* Pods_GLTFSceneKitLoader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLTFSceneKitLoader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11920935D92381A0438260C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		11920935D92381A0438260C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		18D11457D65C39049CCB4729 /* Pods-GLTFSceneKitLoader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTFSceneKitLoader_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLTFSceneKitLoader_Tests/Pods-GLTFSceneKitLoader_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3CD1BAC71EA0B49350C6F711 /* Pods-GLTFSceneKitLoader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTFSceneKitLoader_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLTFSceneKitLoader_Tests/Pods-GLTFSceneKitLoader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* GLTFSceneKitLoader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLTFSceneKitLoader_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* GLTFSceneKitLoader_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLTFSceneKitLoader_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9C5A77B939190E7DA52AC655 /* GLTFSceneKitLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = GLTFSceneKitLoader.podspec; path = ../GLTFSceneKitLoader.podspec; sourceTree = "<group>"; };
+		9C5A77B939190E7DA52AC655 /* GLTFSceneKitLoader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GLTFSceneKitLoader.podspec; path = ../GLTFSceneKitLoader.podspec; sourceTree = "<group>"; };
 		AF37240C754950B919473FE5 /* Pods-GLTFSceneKitLoader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTFSceneKitLoader_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GLTFSceneKitLoader_Example/Pods-GLTFSceneKitLoader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B4C60EDAC2414A19D99AF8C7 /* Pods-GLTFSceneKitLoader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GLTFSceneKitLoader_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GLTFSceneKitLoader_Example/Pods-GLTFSceneKitLoader_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E4EB4FE17DD6A5955BF58B63 /* Pods_GLTFSceneKitLoader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GLTFSceneKitLoader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EED11D1FC9EE0A9A7AD10AF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EED11D1FC9EE0A9A7AD10AF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = JF9ECC2V29;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = JF9ECC2V29;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -323,10 +325,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GLTFSceneKitLoader_Example/Pods-GLTFSceneKitLoader_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GLTFSceneKitLoader/GLTFSceneKitLoader.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GLTFSceneKitLoader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,10 +359,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GLTFSceneKitLoader_Tests/Pods-GLTFSceneKitLoader_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +472,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -511,6 +518,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -520,7 +528,9 @@
 			baseConfigurationReference = AF37240C754950B919473FE5 /* Pods-GLTFSceneKitLoader_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JF9ECC2V29;
 				INFOPLIST_FILE = GLTFSceneKitLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -535,7 +545,9 @@
 			baseConfigurationReference = B4C60EDAC2414A19D99AF8C7 /* Pods-GLTFSceneKitLoader_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JF9ECC2V29;
 				INFOPLIST_FILE = GLTFSceneKitLoader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -549,6 +561,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CD1BAC71EA0B49350C6F711 /* Pods-GLTFSceneKitLoader_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = JF9ECC2V29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -558,6 +571,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -570,11 +584,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18D11457D65C39049CCB4729 /* Pods-GLTFSceneKitLoader_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = JF9ECC2V29;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

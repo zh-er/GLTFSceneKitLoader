@@ -1,4 +1,5 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'GLTFSceneKitLoader_Example' do
   pod 'GLTFSceneKitLoader', :path => '../'
@@ -7,5 +8,10 @@ target 'GLTFSceneKitLoader_Example' do
     inherit! :search_paths
 
     pod 'FBSnapshotTestCase' , '~> 2.1.4'
+    pod 'ModelMapper'
   end
+  
+  
+  
+  
 end
